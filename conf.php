@@ -1,15 +1,23 @@
-<?
+<?php
+
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+
+/**
+ * Configuration File
+ *
+ * This file configures the folders and apache users
+ * 
+ * @author Evaldo Barbosa <evaldobarbosa@gmail.com>
+ * @link   https://github.com/evaldobarbosa/addhost
+ */
+
 ini_set("display_errors", "Off");
-ini_set("error_reporting",E_ALL ^ E_NOTICE ^ E_WARNING);
+ini_set("error_reporting", E_ALL ^ E_NOTICE ^ E_WARNING);
 
-define("APACHE_VHOST_PATH","/etc/apache2/sites-enabled");
-define("APACHE_GROUP","www-data");
-define("CURRENT_USER","evaldo");
-define("HOSTS_FILE","/etc/hosts");
+define("APACHE_VHOST_PATH", "/etc/apache2/sites-enabled");
+define("APACHE_GROUP", "www-data");
+define("CURRENT_USER", "your_user");
+define("HOSTS_FILE", "/etc/hosts");
 
-//define("PROXY_HOST",'proxy.host.com.br:3128');
-//define("PROXY_USER",'evaldobarbosa:myproxypassword');
-
-define("LANGUAGE",'pt_BR');
-//define("LANGUAGE",'de_DE');
-//define("language",'en_US');
+/* Defines Lang. (pt_BR, de_DE or en_US ) */
+define("LANGUAGE", 'pt_BR');
